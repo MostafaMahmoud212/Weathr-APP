@@ -1,6 +1,6 @@
 const myCity = document.querySelector(".queryInput input");
 // console.log(myCity);
-const BusURL = "http://api.weatherapi.com"
+const BusURL = "https://api.weatherapi.com"
 const endPoint = "v1/forecast.json"
 const apiKey = '936c23ea2b274d3589a155132241406';
 const apidays = 3;
@@ -29,9 +29,7 @@ const monthe = [
   "December"
 ];
 
-myCity.addEventListener("input", function(event) {
-  getSearch(event.target.value);
-})
+
 
 async function getSearch(value) {
   const requst = await fetch(`${BusURL}/${endPoint}?key=${apiKey}&q=${value}&days=${apidays}`);
@@ -41,6 +39,10 @@ async function getSearch(value) {
     displayFutcherDay(data.forecast.forecastday);
   }
 }
+
+myCity.addEventListener("input", function(event) {
+  getSearch(event.target.value);
+})
 
       getSearch("cairo");
 
