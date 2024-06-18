@@ -32,8 +32,8 @@ const monthe = [
 
 
 async function getSearch(value) {
-  const requst = await fetch(`${BusURL}/${endPoint}?key=${apiKey}&q=${value}&days=${apidays}`);
-  if( requst.ok && requst.status >= 200 && requst.status < 300) {
+  let requst = await fetch(`${BusURL}/${endPoint}?key=${apiKey}&q=${value}&days=${apidays}`);
+  if( requst.ok == true && requst.status >= 200 && requst.status < 300) {
     let data = await requst.json();
     displayCurrentToDay(data.location, data.current);
     displayFutcherDay(data.forecast.forecastday);
