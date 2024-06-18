@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Weather</title>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg  my-3 ">
+    <div class="container-fluid mx-5">
+      <a class="navbar-brand d-flex" href="#">
+        <img src="./images/logo.png" class="w-100 my-2" alt="logo">
+        <div class="title mx-3">
+          <h4 class="text-white fw-bold" >Weather</h4>
+          <h6 class="text-secondary">tagline goes here</h6>
+        </div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex justify-content-center align-items-center text-center" >
+          <li class="nav-item text-center active ">
+            <a class="nav-link fs-5 text-white fw-bold " href="#header">Home</a>
+          </li>
+          <li class="nav-item text-center ">
+            <a class="nav-link fs-5 text-white fw-bold" href="#news">News</a>
+          </li>
+          <li class="nav-item text-center ">
+            <a class="nav-link fs-5 text-white fw-bold" href="#live-cameras">Live cameras</a>
+          </li>
+          <li class="nav-item text-center ">
+            <a class="nav-link fs-5 text-white fw-bold" href="#Photos">Photos</a>
+          </li>
+          <li class="nav-item text-center ">
+            <a class="nav-link fs-5 text-white fw-bold" href="#Contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="container  d-flex flex-column gap-5 justify-content-center  ">
+
+    
+    <div class="input queryInput text-center mt-5">
+      <input type="text" class="in1  w-75 m-auto my-5" id="inputPassword" placeholder="Find your location...">
+    </div>
+    <div class="container ">
+      
+        <div class="row dispaly ">
+
+          <!-- today -->
+          <div class=" today col-12 col-lg-4 my-3 m-lg-0">
+          </div>
+
+          <div class=" col-12 col-lg-8 h-100">
+            <div class="row forecastDay h-100"></div>
+
+          </div>
+          
+        </div>
+      <!-- </div> -->
+    </div>
+  </section>
+
+  <footer class=" mt-5  ">
+    <div class="inerdiv d-flex align-items-center justify-content-between">
+      <div class="input  mt-5 ms-2 w-75">
+        <input type="text" class="in1  w-75 m-auto my-5 me-2" id="inputPassword" placeholder="Enter your email to subscribe..."/>
+        <button class="btn btn-info rounded-5 my-5 fs-5 fw-bold" type="btn">Subscribe</button>
+      </div>
+      <div class="sochal d-flex ">
+        <div class="mx-4 fs-2 text-center align-content-center mt-5">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class="mx-4 fs-2 text-center mt-5 align-content-center">
+          <i class="fa-brands fa-x-twitter"></i>
+        </div>
+        <div class="mx-4 fs-2 text-center mt-5 align-content-center">
+          <i class="fa-brands fa-google-plus-g"></i>
+        </div>
+        <div class="mx-4 fs-2 text-center mt-5 align-content-center">
+          <i class="fa-brands fa-pinterest"></i>
+        </div>
+      </div>
+    </div>
+    <p class="text-white m-4 pb-3 ">Copyright 2024 AL Mostafa. Designed by <span>Mostafa Mahmoud</span>. All rights reserved</p>
+  </footer>
+
+
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

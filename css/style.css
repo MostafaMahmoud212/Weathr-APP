@@ -1,0 +1,97 @@
+:root {
+  --man-color: #009ad8;
+  --sacand-color: #1a1c27;
+  --therd-color: #bfc1c8;
+}
+* {
+  margin: 0;
+}
+p {
+  margin: 0;
+}
+body {
+  background-color: var(--sacand-color);
+}
+.navbar-toggler {
+  background-color: #009ad8;
+}
+.collapse {
+  background-color: #1a1c27;
+}
+.collapse ul {
+  background-color: #1a1c27;
+}
+.navbar-collapse.collapse.show {
+  background-color: #1a1c27 !important;
+}
+.collapse ul li {
+  transition: .6s;
+}
+.collapse ul li:hover {
+  background-color: #32bbf1;
+  color: #1a1c27;
+  border-radius: 10px;
+}
+section {
+  background-image:  linear-gradient(#00000000, #00000000) , url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  background-size: 100% 70%;
+}
+.input input {
+  background-color: var(--sacand-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  outline: 0;
+  font-size: 23px;
+}
+.ch1, .ch2, .ch3 {
+  background-color: #2a2d3a;
+  color: #fff;
+  height: 100%;
+  border-radius: 30px;
+}
+.ch2 {
+  background-color: #1d2032;
+}
+.ch2 .chHead {
+  background-color: #2a2d3a;
+  border-radius: 30px 30px 0 0 ;
+  padding: 0px 150px;
+}
+.ch1 .chHead, .ch3 .chHead {
+  background-color: #1d2032;
+  border-radius: 30px 30px 0 0 ;
+}
+h1 {
+  font-size: 3.8rem;
+}
+.chContant img.im{
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  .chContant img.im {
+    width: 15%;
+  }
+}
+footer {
+  background-color: #1d2032;
+}
+footer .sochal div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--sacand-color);
+  color: #32bbf1;
+  transition: .6s;
+}
+footer .sochal div:hover {
+  background-color: #32bbf1;
+  color: #eee;
+  
+}
+footer span {
+  color: var(--man-color);
+  font-size: 24px;
+}
